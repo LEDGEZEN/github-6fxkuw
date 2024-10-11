@@ -1,0 +1,80 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-gray-900 text-gray-100;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.bg-dot-pattern {
+  background-color: #1a202c;
+  background-image: radial-gradient(#2d3748 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* React Quill styles */
+.ql-toolbar.ql-snow {
+  @apply bg-gray-700 border-gray-600 rounded-t;
+}
+
+.ql-container.ql-snow {
+  @apply bg-gray-700 border-gray-600 rounded-b;
+}
+
+.ql-editor {
+  @apply text-gray-100 min-h-[200px];
+}
+
+.ql-snow .ql-stroke {
+  @apply stroke-gray-300;
+}
+
+.ql-snow .ql-fill {
+  @apply fill-gray-300;
+}
+
+.ql-snow .ql-picker {
+  @apply text-gray-300;
+}
+
+/* Prose styles for blog content */
+.prose {
+  @apply text-gray-300;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  @apply text-gray-100;
+}
+
+.prose a {
+  @apply text-blue-400;
+}
+
+.prose strong {
+  @apply text-gray-100;
+}
+
+.prose ul, .prose ol {
+  @apply text-gray-300;
+}
+
+.prose blockquote {
+  @apply border-gray-700 text-gray-400;
+}
+
+.prose code {
+  @apply bg-gray-800 text-gray-300;
+}
+
+.prose pre {
+  @apply bg-gray-800;
+}
+
+.prose img {
+  @apply rounded-lg;
+}
